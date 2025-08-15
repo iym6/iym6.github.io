@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Михаил Семёнов - Заместитель генерального директора по ИТ НПП ТЭК" name="description"/>
+  <title>Михаил Семёнов - Заместитель генерального директора по ИТ</title>
+  <link href="assets/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Russo+One&family=Archivo+Black&display=swap" rel="stylesheet"/>
+  <link href="../css/styles.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<div id="articleModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <div id="modalDate" class="modal-date"></div>
+    <div id="modalContent" class="modal-text"></div>
+  </div>
+</div>
+<body>
+  <!-- Header Section -->
+  <section id="fullscreen-header" header class="fullscreen-header">
+    <nav class="header-nav">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="#fullscreen-header">
+              <img alt="Logo" src="https://www.mikhailsemenov.com/wp-content/themes/MS-theme/img/тэк.png" style="width: auto; height: 50px; border-radius: 0;"/>
+            </a>
+            <a class="logo-text" href="#fullscreen-header" style="text-decoration: none;">
+              Михаил Семёнов
+            </a>
+          </div>
+          <nav>
+            <ul class="nav-menu" id="navMenu">
+              <li>
+                <a href="#articles">
+                 Статьи
+                </a>
+              </li>
+              <li>
+                <a href="#projects">
+                 Проекты
+                </a>
+              </li>
+              <li>
+                <a href="#company">
+                 Компания
+                </a>
+              </li>
+              <li>
+                <a href="#certificates">
+                 Достижения
+                </a>
+              </li>
+              <li>
+                <a href="#contact">
+                 Контакты
+                </a>
+              </li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+             ☰
+            </button>
+          </nav>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Михаил Николаевич Семёнов</h1>
+          <p class="hero-subtitle">
+            Заместитель генерального директора по информационным технологиям НПП ТЭК
+          </p>
+          <p class="hero-quote">
+            "Продуктивная работа - это искусство превращать идеи в результаты"
+          </p>
+          <div class="work-approach">
+            <p class="approach-text">Эффективная команда — это половина успеха любого проекта</p>
+            <p class="approach-text">Автоматизация должна быть частью бизнес-процессов компании</p>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://www.mikhailsemenov.com/wp-content/themes/MS-theme/img/Worker.png" alt="Михаил Семёнов" class="hero-photo">
+        </div>
+      </div>
+      </div>
+  </header>
+</section>
+
+  <!-- Articles Section -->
+<section id="articles" class="section articles-section">
+  <div class="container">
+    <h2 class="section-title">Статьи</h2>
+    <div class="articles-grid" id="articlesContainer"></div>
+    <div class="load-more-container">
+      <button id="loadMoreBtn" class="load-more-btn">Показать ещё</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="section projects-section">
+  <div class="container">
+    <h2 class="section-title">Проекты</h2>
+    <div class="projects-grid"></div>
+    <div class="load-more-container">
+      <button id="loadMoreProjectsBtn" class="load-more-btn">Показать ещё проекты</button>
+    </div>
+  </div>
+</section>
+
+    <!-- Company Section -->
+<section id="company" class="section company-section"> 
+  <div class="container">
+    <h2 class="section-title">О компании</h2>
+    <div class="company-content">
+      <div class="company-text">
+        <p class="company-description">
+          НПП «Томская электронная компания» - современное инжиниринговое и производственное предприятие, предлагающее решения, продукцию и разработку программного обеспечения.
+        </p>
+        <p class="company-description">
+          Компания специализируется на разработке и производстве электронных компонентов, систем автоматизации и программного обеспечения для промышленных предприятий.
+        </p>
+        <p class="company-description">
+          Как заместитель генерального директора по ИТ, я руковожу цифровой трансформацией компании, внедрением современных ИТ-решений и развитием ИТ-инфраструктуры.
+        </p>
+        <div class="company-btn-wrapper">
+          <a class="btn company-btn" href="https://npptec.ru">
+            Посетить сайт компании
+          </a>
+        </div>
+      </div>
+      <div class="company-image">
+        <img alt="НПП ТЭК" src="https://www.mikhailsemenov.com/wp-content/themes/MS-theme/img/TEK.jpg" class="company-photo"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Certificates Section -->
+<section id="certificates" class="section certificates-section">
+  <div class="container">
+    <h2 class="section-title">Сертификаты и достижения</h2>
+    
+    <div class="certificates-container">
+      <div class="swiper certificates-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="certificate-slide">
+              <img src="https://www.mikhailsemenov.com/wp-content/themes/MS-theme/img/ser0.png" alt="SolidWorks" class="certificate-image">
+              <h3 class="certificate-title">Внедрение современного ПО от SolidWorks</h3>
+                
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="certificate-slide">
+              <img src="https://www.mikhailsemenov.com/wp-content/themes/MS-theme/img/ser1.png" alt="English B1" class="certificate-image">
+              <h3 class="certificate-title">Общий английский язык В1</h3>
+              
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="certificate-slide">
+              <img src="https://www.mikhailsemenov.com/wp-content/themes/MS-theme/img/ser2.png" alt="1C" class="certificate-image">
+              <h3 class="certificate-title">1С:Концепция и Торговый функционал</h3>
+              
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="certificate-slide">
+              <img src="https://www.mikhailsemenov.com/wp-content/themes/MS-theme/img/ser3.png" alt="1C" class="certificate-image">
+              <h3 class="certificate-title">1С:Планирование и Бюджетирование</h3>
+              
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="certificate-slide">
+              <img src="https://www.mikhailsemenov.com/wp-content/themes/MS-theme/img/ser4.png" alt="TechExp" class="certificate-image">
+              <h3 class="certificate-title">Пользователь справочной системы "Техэксперт"</h3>
+              
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="certificate-slide">
+              <img src="https://www.mikhailsemenov.com/wp-content/themes/MS-theme/img/ser5.jpg" alt="ITIL v3" class="certificate-image">
+              <h3 class="certificate-title">Основы ITIL v3 2011</h3>
+              
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="certificate-slide">
+              <img src="https://www.mikhailsemenov.com/wp-content/themes/MS-theme/img/ser6.png" alt="Project Management" class="certificate-image">
+              <h3 class="certificate-title">Управление проектами компании</h3>
+              
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="certificate-slide">
+              <img src="https://www.mikhailsemenov.com/wp-content/themes/MS-theme/img/ser7.png" alt="MS SQL" class="certificate-image">
+              <h3 class="certificate-title">Создание запросов на языке Transact-SQL</h3>
+              
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="certificate-slide">
+              <img src="https://www.mikhailsemenov.com/wp-content/themes/MS-theme/img/ser8.png" alt="SQL" class="certificate-image">
+              <h3 class="certificate-title">Написание запросов в MS SQL Server 2008</h3>
+              
+            </div>
+          </div>
+        </div> 
+
+      <div class="swiper-nav-fixed">
+        <div class="swiper-button-prev-fixed">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/>
+          </svg>
+        </div>
+        <div class="swiper-button-next-fixed">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+          </svg>
+        </div>
+      </div>
+        <div class="swiper-pagination-fixed"></div>
+      </div> 
+    </div> 
+  </div> 
+</section>
+
+    <!-- Contacts Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title-contact">Контакты</h2>
+        
+        <div class="contact-info">
+          <div class="contact-card" onclick="window.location.href='mailto:semyonovmn@gmail.com'">
+            <div class="contact-card-content">
+              <div class="contact-icon">
+                <img alt="Email" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z'/%3E%3C/svg%3E"/>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <p>semyonovmn@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-card" onclick="window.location.href='tel:+73822999784'">
+            <div class="contact-card-content">
+              <div class="contact-icon">
+                <img alt="Phone" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z'/%3E%3C/svg%3E"/>
+              </div>
+              <div class="contact-details">
+                <h4>Телефон</h4>
+                <p>+7(3822) 999-784</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-card" onclick="window.open('https://t.me/SemyonovMN', '_blank')">
+            <div class="contact-card-content">
+              <div class="contact-icon">
+                <img alt="Telegram" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.74 8.21c-.15.72-.54.89-1.1.56l-3-2.21-1.45 1.39c-.16.16-.3.3-.6.3l.21-3 5.57-5.07c.24-.22-.05-.34-.37-.12l-6.87 4.33-2.96-.92c-.72-.22-.73-.72.15-1.07l11.57-4.46c.45-.17.85.1.7.85z'/%3E%3C/svg%3E"/>
+              </div>
+              <div class="contact-details">
+                <h4>Telegram</h4>
+                <p>@SemyonovMN</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="working-hours">
+          <h3>Часы работы</h3>
+          <div class="hours-grid">
+            <div class="hours-item">
+              <span class="day">Понедельник - Пятница</span>
+              <span class="time">09:00 - 18:00</span>
+            </div>
+            <div class="hours-item">
+              <span class="day">Суббота - Воскресенье</span>
+              <span class="time">Выходной</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Михаил Семёнов</h3>
+          <ul class="footer-links">
+            <li><a href="#articles">Статьи</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#company">Компания</a></li>
+            <li><a href="#certificates">Достижения</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>НПП "ТЭК"</h3>
+          <ul class="footer-links">
+            <li><a href="https://npptec.ru/">Официальный сайт</a></li>
+            <li><a href="https://yandex.ru/maps/-/CHg36TYp">г. Томск, ул. Высоцкого, д. 33</a></li>
+            <li><a href="tel:+73822999784">+7 (3822) 999-784</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Контакты</h3>
+          <ul class="footer-links">
+            <li><a href="mailto:semyonovmn@gmail.com">semyonovmn@gmail.com</a></li>
+            <li><a href="tel:+73822999784">+7 (3822) 999-784</a></li>
+            <li><a href="https://t.me/SemyonovMN">Telegram @SemyonovMN</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        © 2025 Михаил Семёнов. Все права защищены.
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="../js/projects.js"></script>
+  <script type="module" src="../js/articles.js"></script>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

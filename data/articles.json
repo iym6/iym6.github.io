@@ -1,0 +1,33 @@
+{
+  "articles": [
+    {
+      "id": 4,
+      "date": "6 марта 2022",
+      "title": "Томское предприятие в тренде цифровизации",
+      "image": "../img/article4.jpeg",
+      "textFile": "article4.txt"
+    },
+    {
+      "id": 3,
+      "date": "4 марта 2022",
+      "title": "«Томская Электронная Компания» внедрила около тридцати решений в сфере цифровизации бизнеса",
+      "image": "../img/article3.png",
+      "textFile": "article3.txt"
+    },
+     {
+      "id": 2,
+      "date": "30 июля 2012",
+      "title": "Softline и Microsoft заключили соглашение Enterprise Agreement с ООО НПП ТЭК",
+      "image": "../img/article2.png",
+      "textFile": "article2.txt"
+    },
+     {
+      "id": 1,
+      "date": "27 февраля 2009",
+      "title": "НПП «Томская электронная компания» и «Утилекс АйТи» подводят итоги первого этапа внедрения ERP-системы",
+      "image": "../img/article1.webp",
+      "textFile": "article1.txt"
+    }
+    
+  ]
+}
