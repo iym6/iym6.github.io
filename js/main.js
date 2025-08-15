@@ -1,31 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const certSwiper = new Swiper('.certificates-swiper', {
-  loop: true,
-  slidesPerView: 1,
-  centeredSlides: true,
-  
-  // Кастомная пагинация
-  pagination: {
-    el: '.swiper-pagination-fixed',
-    clickable: true,
-    bulletClass: 'swiper-pagination-bullet-fixed',
-    bulletActiveClass: 'swiper-pagination-bullet-fixed-active',
-    renderBullet: function (index, className) {
-      return `<span class="${className}"></span>`;
-    },
-  },
-  
-  // Кастомная навигация
-  navigation: {
-    nextEl: '.swiper-button-next-fixed',
-    prevEl: '.swiper-button-prev-fixed',
-  },
-});
-
-
-});
+  // Инициализация Swiper с проверкой существования контейнера
+  const certSwiperContainer = document.querySelector('.certificates-swiper');
+  if (certSwiperContainer) {
+    new Swiper('.certificates-swiper', {
+      loop: true,
+      slidesPerView: 1,
+      centeredSlides: true,
+      pagination: {
+        el: '.swiper-pagination-fixed',
+        clickable: true,
+        bulletClass: 'swiper-pagination-bullet-fixed',
+        bulletActiveClass: 'swiper-pagination-bullet-fixed-active',
+        renderBullet: function (index, className) {
+          return `<span class="${className}"></span>`;
+        },
+      },
+      navigation: {
+        nextEl: '.swiper-button-next-fixed',
+        prevEl: '.swiper-button-prev-fixed',
+      },
+    });
+  }
 // Enhanced Mobile Menu
-document.addEventListener('DOMContentLoaded', function() {
   const mobileMenuToggle = document.getElementById('mobileMenuToggle');
   const navMenu = document.getElementById('navMenu');
   const menuIcon = document.querySelector('.menu-icon');
@@ -35,7 +31,11 @@ document.addEventListener('DOMContentLoaded', function() {
       e.stopPropagation();
       navMenu.classList.toggle('active');
       mobileMenuToggle.classList.toggle('active');
-      menuIcon.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+      
+      if (menuIcon){
+        menuIcon.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+      }
+      
     });
   }
 
@@ -46,25 +46,31 @@ document.addEventListener('DOMContentLoaded', function() {
         !e.target.closest('#mobileMenuToggle')) {
       navMenu.classList.remove('active');
       mobileMenuToggle.classList.remove('active');
+      if (menuIcon){
       menuIcon.textContent = '☰';
+      }
     }
   });
 
   // Smooth scroll for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      const headerHeight = document.querySelector('header').offsetHeight;
-      const targetPosition = target.offsetTop - headerHeight;
-      
-      window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth'
+  const anchorLinks = document.querySelectorAll('a[href^="#"]');
+  if (anchorLinks.length > 0) {
+    anchorLinks.forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const target = document.querySelector(targetId);
+        
+        if (target) {
+          const header = document.querySelector('.header-nav');
+          const headerHeight = header ? header.offsetHeight : 0;
+          
+          window.scrollTo({
+            top: target.offsetTop - headerHeight,
+            behavior: 'smooth'
+          });
+        }
       });
-    }
-  });
+    });
+  }
 });
-});
-

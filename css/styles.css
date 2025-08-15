@@ -38,7 +38,6 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
 }
 
 /* Header Styles */
@@ -141,7 +140,6 @@ body {
 }
 
 /* Hero Section */
-/* Hero Section - Модифицированная версия */
 .fullscreen-header {
   height: 100vh;
   min-height: 700px;
@@ -607,7 +605,6 @@ body {
 
 /* Certificates Section - Fixed Elements */
 .certificates-section {
-
   background: var(--white);
 }
 
@@ -1183,7 +1180,7 @@ footer {
   }
 
   .section {
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
   
   .section-title {
