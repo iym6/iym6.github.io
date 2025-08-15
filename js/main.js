@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
   },
 });
 
-  // Остальной ваш код...
+
 });
 // Enhanced Mobile Menu
 document.addEventListener('DOMContentLoaded', function() {
