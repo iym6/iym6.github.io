@@ -30,7 +30,7 @@ function displayArticles() {
     <div class="article-card" data-article-id="${article.id}">
       <div class="article-image">
         <img src="${article.image}" alt="${article.title}"
-             onerror="this.onerror=null;this.src='../img/articles/placeholder.jpg';">
+             onerror="this.onerror=null;this.src='/img/articles/placeholder.jpg';">
       </div>
       <div class="article-content">
         <div class="article-date">${article.date}</div>

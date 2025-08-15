@@ -5,42 +5,42 @@
       "title": "HR-бот в Telegram",
       "description": "Интеллектуальный бот для автоматизации HR-процессов",
       "techStack": ["Python", "PostgreSQL", "1С", "Telegram Bot API"],
-      "image": "../img/hr-bot.jpg"
+      "image": "/img/hr-bot.jpg"
     },
     {
       "id": 5,
       "title": "Трекер времени \"UseMyTime\"",
       "description": "Система учета рабочего времени и управления проектами. Позволяет отслеживать время, затраченное на задачи, генерировать отчеты и анализировать эффективность работы команды",
       "techStack": ["React", "Node.js", "MongoDB", "React Native"],
-      "image": "../img/UseMyTime.png"
+      "image": "/img/UseMyTime.png"
     },
     {
       "id": 4,
       "title": "ИТ-регламенты",
       "description": "Комплексная система регламентов и процедур для ИТ-отдела",
       "techStack": ["Confluence", "GIT", "JIRA", "ITIL"],
-      "image": "../img/itt.jpg"
+      "image": "/img/itt.jpg"
     },
     {
       "id": 3,
       "title": "AI ChatGPT-боты",
       "description": "Интеллектуальные чат-боты на базе GPT для автоматизации клиентского сервиса, технической поддержки и внутренних бизнес-процессов компании",
       "techStack": ["OpenAI API", "Python", "FastAPI", "Redis"],
-      "image": "../img/ai.png"
+      "image": "/img/ai.png"
     },
     {
       "id": 2,
       "title": "Сайты компании",
       "description": "Разработка и поддержка корпоративных веб-сайтов",
       "techStack": ["WordPress", "PHP", "JavaScript", "MySQL"],
-      "image": "../img/sites.jpg"
+      "image": "/img/sites.jpg"
     },
     {
       "id": 1,
       "title": "Битрикс 24",
       "description": "Внедрение и настройка Битрикс24",
       "techStack": ["Битрикс24", "REST API", "Webhooks", "1С"],
-      "image": "../img/bitrix.webp"
+      "image": "/img/bitrix.webp"
     }
   ]
 }

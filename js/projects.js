@@ -29,7 +29,7 @@ function displayProjects() {
     <div class="project-card" data-project-id="${project.id}">
       <div class="project-image">
         <img src="${project.image}" alt="${project.title}" 
-             onerror="this.onerror=null;this.src='../img/${project.image}';">
+             onerror="this.onerror=null;this.src='/img/${project.image}';">
       </div>
       <div class="project-content">
         <h3 class="project-title">${project.title}</h3>
